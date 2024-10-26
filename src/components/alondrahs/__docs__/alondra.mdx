@@ -1,0 +1,52 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./example.tsx";
+import * as AlondraHS from "./alondrahs.stories.tsx";
+
+<Meta of={AlondraHS} title="AlondraHS" />
+
+# AlondraHS
+
+Componente de snakbar con diferentes especializaciones.
+
+#### Example
+
+<Canvas of={AlondraHS.Primary} />
+
+## Usage
+
+```ts
+import {AlondraHS} from 'milibreria';
+
+function Example(){
+return (
+<AlondraHS
+message:"Snackbar happy",
+messagecolor:"black",
+color:"green",
+icon:"happy",
+/>
+);
+};
+
+export default Example;
+```
+
+#### Example
+
+<Canvas of={AlondraHS.Secondary} />
+
+## Usage
+
+```ts
+import {AlondraHS} from 'milibreria';
+
+function Example(){
+return (
+<AlondraHS
+message:"Snackbar sad",
+messagecolor:"white",
+color:"red",
+icon:"sad",
+/>
+);
+};

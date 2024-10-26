@@ -1,24 +1,17 @@
 import React from "react";
 //importamos nuestro componente CustomButton y sus props
-import MyButton, { MyButtonProps } from "../mybutton";
+import MyFavouriteBorder, { MyFavouriteBorderProps } from "../myfavouriteborder";
 //Creamos un componente Example al cual le pasaremos las props definidas
 //en nuestro componente CustomButton. Luego renderizamos nuestro componente
 //<CustomButton /> con esas props. La idea es que llamemos al componente Example
 //con valores de las props para renderizar el componente <CustomButton /> de diferentes
 //maneras, es decir, crear una historia de renderizados de nuestro componente.
-function Example(props: MyButtonProps){
+function Example(props: MyFavouriteBorderProps){
     return(
-        <MyButton
-            text={props.text}
-            bgcolor={props.bgcolor}
-            txtcolor={props.txtcolor}
-            bordercolor={props.bordercolor}
-            borderwidth={props.borderwidth}
-            hoverbgcolor={props.hoverbgcolor}
-            hovertxtcolor={props.hovertxtcolor}
-            disabled={props.disabled}
-            size={props.size}
+        <MyFavouriteBorder
             onClick={props.onClick}
+            disabled={props.disabled}
+            color={props.color}
         />
     )
 }
